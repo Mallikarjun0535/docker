@@ -1,0 +1,30 @@
+docker images --> for find the images of the docker
+docker pull nginx:1.24 --> for pulling the default images from the docker hub 
+docker pull nginx  --> this will pull the latest image of the docker
+docker run nginx --> it will run the images in the container 
+
+
+docker ps  -> will check all the images running as a container
+docker stop "continerid" --> it will stop the running with container id
+docker start "continerid" --> it will start running with container id
+
+docker run -d  ngnix  --> It will run the images but the command prompt is available for further commands 
+docker run --> will run the new container every time 
+docker ps -a  -->. will help us to view all the containers that are running or stopped.
+
+
+when we want to access from the locahost we have to give some port
+------------------------------------------------------------------
+
+docker run -p 9000:80 ngnix --> by default nginx is not accessible from the local machine we are given the following command with specific port 9000 so it will access 9000 from the local machine
+
+
+we can start and  stop and also a container with the name  
+--------------------------------------------------------------
+docker run --name malliknginx -p 9007:80 nginx --> we have assigned a name to the docker container as malliknginx so can start and stop same container with this name
+
+docker stop malliknginx --> stopping the container
+docker start malliknginx --> starting the container
+
+
+
